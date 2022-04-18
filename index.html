@@ -27,11 +27,22 @@
             <a href="#review" class="card pulse pink-text">Review</a>
         </div>
         <div class="the-buttons hide-on-med-and-down">
-            <a href="#login"><button class="waves-effect waves-light btn">Log In</button></a>
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Log In</a>
             <!-- <button class="waves-effect waves-light btn">Sign Up</button> -->
         </div>
           <i class="modal-trigger  menu material-icons hide-on-large-only teal-text" id = "menu">dehaze</i>
 
+
+
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
 
 
     </header>
@@ -44,7 +55,7 @@
       <a href="#about" class="pink-text"> <button>About</button> </a>
       <a href="#order" class="pink-text"> <button>Order</button> </a>
       <a href="#review" class="pink-text"> <button>Review</button> </a>
-      <a href="#login" class="pink-text"> <button>Log In</button> </a>
+      <a href="#modal1" class="pink-text modal-trigger"> <button>Log In</button> </a>
     </div>
 
 
@@ -390,12 +401,140 @@
 
 
     <div class="mycontainer">
+      <div class="title">
+        <h1 class="pink-text">Add a review</h1>
+      </div>
       <div class="star-widget">
-        <input type="radio" name="" value="">
+
+        <strong style="margin-right: 20px;">Rating</strong>
+        
+        <i class="fa-solid fa-star pink-text"></i>
+        <i class="fa-solid fa-star pink-text"></i>
+        <i class="fa-solid fa-star pink-text"></i>
+        <i class="fa-solid fa-star pink-text"></i>
+        <i class="fa-regular fa-star pink-text"></i>
+        
+      </div>
+
+
+      <div style="margin-top: 20px;" class="row">
+
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="First Name" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Last Name" id="first_name" type="text" class="validate">
+              <label for="first_name">Last Name</label>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="review" type="text" class="validate">
+              <label for="review">Add Review</label>
+            </div>
+          </div>
+
+          <a href=""><button class="waves-effect waves-light btn">Submit</button></a>
+
+
+        </form>
+
       </div>
     </div>
 
     <!-- add a review -->
+
+
+    <!-- login form -->
+
+
+
+    <div class="mycontainer">
+      <div class="title">
+        <h1 class="pink-text">Log in here</h1>
+      </div>
+
+      <div style="margin-top: 20px;" class="row">
+
+        <form class="col s12">
+
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Email Address" id="theemail" type="email" class="validate">
+              <label for="theemail"></label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="PassWord" id="thepassword" type="password" class="validate">
+              <label for="thepassword">Password</label>
+            </div>
+          </div>
+
+          <a href=""><button class="waves-effect waves-light btn">Log In</button></a>
+
+
+        </form>
+
+      </div>
+    </div>
+
+
+    <!-- login form -->
+
+
+    <!-- signup form -->
+
+
+
+    <div class="mycontainer">
+      <div class="title">
+        <h1 class="pink-text">New User? Sign Up Here</h1>
+      </div>
+
+      <div style="margin-top: 20px;" class="row">
+
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="First Name" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Last Name" id="first_name" type="text" class="validate">
+              <label for="first_name">Last Name</label>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email Address</label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="PassWord" id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Repeat PassWord" id="password" type="password" class="validate">
+              <label for="password">Repeat Password</label>
+            </div>
+          </div>
+
+          <a href=""><button class="waves-effect waves-light btn">Sign Up</button></a>
+
+
+        </form>
+
+      </div>
+    </div>
+
+
+
+    <!-- signup form -->
 
 
 
@@ -449,11 +588,8 @@
 
 
 
-    <script src="index.js">
-      $(document).ready(function(){
-        $('.modal').modal();
-      })
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

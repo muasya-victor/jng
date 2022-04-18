@@ -444,6 +444,7 @@ body .active{
 
 @media screen and (max-width: 768px){
 
+
   .footer-col{
     width: 100%;
   }
@@ -451,7 +452,7 @@ body .active{
 
 
 @media (max-width: 106px){
-  .review-container-box{
+  .review-container-box, .mycontainer{
     width: 45%;
     padding: 10px;
   }
@@ -463,7 +464,7 @@ body .active{
     margin-bottom: 30px;
 
   }
-    .container{
+    .container, .mycontainer{
         width: 80%;
         display: block;
         margin: auto;
